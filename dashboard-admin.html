@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dashboard Admin</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="dark">
+
+<div class="layout">
+
+<aside class="sidebar">
+  <h3>Admin Panel</h3>
+  <button onclick="logout()">Logout</button>
+</aside>
+
+<main class="main">
+  <div class="card-glass">
+    <h2>Total Pendaftar</h2>
+    <canvas id="chart"></canvas>
+  </div>
+</main>
+
+</div>
+
+<script type="module" src="js/admin.js"></script>
+</body>
+</html>
