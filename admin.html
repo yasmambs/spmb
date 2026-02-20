@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Panel</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="dark-bg">
+
+<div class="admin-wrapper">
+
+  <div class="glass-card admin-card">
+    <h2>Status Pendaftar</h2>
+    <canvas id="pieChart"></canvas>
+  </div>
+
+  <div class="glass-card admin-card">
+    <h2>Data Pendaftar</h2>
+    <table>
+      <tr>
+        <th>Nama</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>Sarah</td>
+        <td>Menunggu</td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+
+<script>
+new Chart(document.getElementById('pieChart'),{
+type:'pie',
+data:{
+labels:['Menunggu','Lulus','Tidak Lulus'],
+datasets:[{data:[12,5,3]}]
+}
+});
+</script>
+
+</body>
+</html>
