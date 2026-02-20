@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Pendaftaran</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-bg">
+
+<div class="wizard-container glass-card">
+
+  <div class="step-indicator">
+    <div class="step active">1</div>
+    <div class="line"></div>
+    <div class="step">2</div>
+    <div class="line"></div>
+    <div class="step">3</div>
+  </div>
+
+  <div id="step1" class="step-content">
+    <h2>Data Diri</h2>
+    <input placeholder="Nama Lengkap">
+    <input placeholder="NISN">
+  </div>
+
+  <div id="step2" class="step-content hidden">
+    <h2>Alamat</h2>
+    <input placeholder="Alamat Lengkap">
+    <input placeholder="No HP">
+  </div>
+
+  <div id="step3" class="step-content hidden">
+    <h2>Berkas</h2>
+    <input type="file">
+  </div>
+
+  <div class="wizard-btn">
+    <button onclick="nextStep()" class="btn-glow">Lanjut</button>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
